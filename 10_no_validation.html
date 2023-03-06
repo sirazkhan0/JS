@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Please enter ur no
+    <input type="text" name="" onkeyup="val(this)">
+    <div id="res"></div>
+</body>
+<script>
+    document.getElementById("res").style.color = "red";
+    function val(elem) {
+        if (isNaN(elem.value)) {
+            document.getElementById("res").innerText = "plz enter no only.";
+        } else {
+            document.getElementById("res").innerText = "";
+            if(elem.value.length > 10){
+                document.getElementById("res").innerText= " plz enter only ten digits";
+             } else {
+            document.getElementById("res").innerText = "";
+            }
+        }
+    }
+</script>
+
+</html>
