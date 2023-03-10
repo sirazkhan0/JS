@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="clg">hello1</div>
+    <div class="clg">hello2</div>
+    <h1 id="hello" onmouseenter="on()" onmouseleave="off()">hello world</h1>
+</body>
+<script>
+    function on() {
+        document.getElementById("hello").style.color = "red"
+        document.getElementById("hello").style.fontSize = "100px"
+    }
+    function off(){
+        document.getElementById("hello").style.color = "blue"
+        document.getElementById("hello").style.fontSize = "50px"
+    }
+
+    document.getElementsByClassName("clg")[1].style.color="orange"
+</script>
+
+</html>
